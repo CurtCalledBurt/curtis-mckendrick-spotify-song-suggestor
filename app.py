@@ -30,7 +30,7 @@ X = songs_df[songs_df.columns[3:]]
 
 my_model = create_model(preprocess(X))
 
-@app.route('/last_hope', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def plot_png():
     fig = create_figure()
     output = io.BytesIO()
